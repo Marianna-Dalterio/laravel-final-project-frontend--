@@ -30,7 +30,9 @@ export default function CategoryList() {
                                 </p>
                             </div>
                             <div className="card-footer">
+
                                 <Link
+                                //query parameter, mi serve per il filtro dei prodotti che hanno quella categoria, lo implemento in ProductList
                                     to={`/products?category=${category.id}`}
                                     className="btn btn-dark w-100">
                                     Vedi prodotti →
