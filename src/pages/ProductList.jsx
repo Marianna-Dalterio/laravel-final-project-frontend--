@@ -1,9 +1,17 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import ProductCard from "../components/ProductCard";    
+import ProductCard from "../components/ProductCard";
+import { useSearchParams } from "react-router-dom";    
 
 export default function ProductList () {
     const [products, setProducts] = useState([]);
+    const [searchParams] = useSearchParams();
+    const categoryId = searchParams.get('category');
+
+    
+
+    const filteredProducts= categoryId ? products.filter(p=>p.category_id==categoryId) : products;
+   
 
     useEffect(()=>{
         axios
@@ -23,7 +31,7 @@ export default function ProductList () {
             <h2 className="fw-bold mb-4">👗 Prodotti </h2>
             
             <div className="row row-cols-1 row-cols-md-3 g-4">
-                {products.map((product)=>(
+                {filteredProducts.map((product)=>(
                    
               
                     <div className="col" key={product.id}>
