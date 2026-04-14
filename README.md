@@ -1,16 +1,39 @@
-# React + Vite
+## ⚛️ React & Vite Frontend - E-commerce UI
+Questa è l'interfaccia utente dinamica del mio progetto finale per il Master in Web Development di Boolean. Il frontend "consuma" i dati esposti dal backend Laravel per offrire un'esperienza di acquisto fluida e reattiva.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📸 Anteprima Progetto
+![Catalogo Prodotti](./screenshots/catalogo.jpg)
+![Filtro per categoria](./screenshots/filtro_categorie.jpg)
 
-Currently, two official plugins are available:
+## 🚀 Funzionalità Principali
+- Catalogo Dinamico: Visualizzazione dei prodotti recuperati in tempo reale tramite API.
+- Filtri Avanzati: Sistema di filtraggio per categoria per una ricerca rapida dei prodotti.
+- Single Page Navigation: Navigazione fluida tra la home e le pagine di dettaglio prodotto grazie a React Router.
+- Design Responsivo: Interfaccia ottimizzata per ogni dispositivo (Mobile, Tablet, Desktop) realizzata con Bootstrap.
+- Integrazione API: Gestione delle chiamate asincrone tramite Axios.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠 Tech Stack
+- React & Vite
+- Bootstrap
+- Chiamate Ajax con Axios
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ⚙️ Installazione Locale
+Per avviare l'interfaccia sul tuo computer:
+Clona il repo: git clone [URL-DEL-REPO-FRONTEND]
+Entra nella cartella: cd [NOME-CARTELLA]
+Installa le dipendenze: npm install
+Configurazione API: Assicurati che il backend Laravel sia attivo (solitamente su http://localhost:8000). Se hai un file .env per l'URL dell'API, configuralo ora.
+Avvia in modalità sviluppo: npm run dev
 
-## Expanding the ESLint configuration
+## 💡 Sfide Tecniche
+In questa fase del progetto, mi sono concentrato sulla gestione dello stato di React e sull'ottimizzazione delle chiamate API con Axios. Gestire la sincronizzazione tra i filtri scelti dall'utente e i dati provenienti dal database Laravel è stato un ottimo esercizio per comprendere il flusso dei dati in un'applicazione professionale.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+### 🔗 Repository Collegati
+Per funzionare, questo frontend necessita del suo server backend:
+- **Frontend (Questo Repo):** UI dinamica in React/Vite.
+- **Backend:** API REST e Backoffice in Laravel. [Vai al Repository Backend →](https://github.com/Marianna-Dalterio/laravel-final-project.git)
+
+---
